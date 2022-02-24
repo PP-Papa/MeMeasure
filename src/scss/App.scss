@@ -1,0 +1,74 @@
+@import "custom";
+body {
+  min-height: 100vh;
+
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+}
+.App {
+  height: 100vh;
+}
+.main-content {
+  h2 {
+    text-align: center;
+    margin-bottom: 10%;
+  }
+}
+
+.welcome-message {
+  text-align: center;
+}
+#camView {
+  width: 100%;
+}
+
+#welcome-image {
+  height: 180px;
+  width: 180px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  border-radius: 50%;
+}
+
+.tweet {
+  height: 300px;
+  width: 300px;
+  background: white;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.red {
+  color: red;
+  font-size: 50px;
+}
+.output-layer {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#message-overlay {
+  display: flex;
+  align-items: center;
+  div {
+    display: table;
+    text-align: center;
+    width: 100%;
+    min-height: 30%;
+    background: rgba(255, 255, 255, 0.4);
+    span {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
